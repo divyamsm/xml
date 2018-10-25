@@ -1,0 +1,2 @@
+[03-Oct-2018 14:52:32 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/ubuntu/workspace/lab1/form/welcome.php on line 12
+[03-Oct-2018 14:53:11 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/ubuntu/workspace/lab1/form/welcome.php on line 12

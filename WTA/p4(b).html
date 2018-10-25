@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 4 | Question 4</title>
+</head>
+<body>
+	<table cellspacing="60">
+		<form name="mForm">
+			<tr>
+				<th>Items</th>
+				<th>Price(in kg)</th>
+				<th>Quantity</th>
+			</tr>
+			<tr>
+				<td>Item 1</td>
+				<td>100</td>
+				<td><input onchange="findTotalAmount(mForm)" type="number" name="qty1"></td>
+			</tr>
+			<tr>
+				<td>Item 2</td>
+				<td>25</td>
+				<td><input onchange="findTotalAmount(mForm)" type="number" name="qty2"></td>
+			</tr>
+			<tr>
+				<td>Item 3</td>
+				<td>40</td>
+				<td><input onchange="findTotalAmount(mForm)" type="number" name="qty3"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td><input type="text" READONLY name="finqty"></td>
+			</tr>
+		</form>
+	</table>
+
+	<script type="text/javascript">
+		function findTotalAmount(mForm) {
+			mForm.finqty.value = mForm.qty1.value*100 + mForm.qty2.value*25 + mForm.qty3.value*40;
+			return false;
+		}
+	</script>
+
+</body>
+</html>

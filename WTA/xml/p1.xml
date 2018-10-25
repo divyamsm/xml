@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="band.css"?>   
+<?xml-stylesheet type="text/xsl" href="a.xsl"?>
+<ad>
+	<band>
+		<name> Beatles </name>
+		<show minOccurs = "1">
+			<date> 21 jan </date>
+			<venue> Vegas </venue>
+			</show>
+		<genre>Pop</genre>
+		<artists>
+			<performer> 
+					<pname>John</pname>
+					<role> Vocals </role> 
+				</performer>
+			<performer> 
+					<pname>Paul</pname>
+					<role> Guitarist </role> 
+				</performer>
+			<performer> 
+				<pname>Ringo</pname>
+				<role> Drums </role> 
+				</performer>
+			<performer> 
+				<pname>George</pname>
+				<role> Guitarist </role> 
+				</performer>
+		</artists>
+		<ticketprice>
+				<gold> 500  </gold>
+				<silver> 400 </silver>
+			</ticketprice>
+		<seller>
+			<sname>PopularRecords</sname>
+			<slink>popsrecords.com/Beatles</slink>
+		</seller>
+	</band>
+	<band>
+		<name> One Direction  </name>
+		<show minOccurs = "1">
+			<date> 32 jan </date>
+			<venue> some garbage place </venue>
+			</show>
+		<genre>Classical</genre>
+		<artists>
+			<performer> 
+					<pname>Zayn</pname>
+					<role> Vocals </role> 
+				</performer>
+			<performer> 
+					<pname>Louis</pname>
+					<role> Guitarist </role> 
+				</performer>
+			<performer> 
+				<pname>Niall</pname>
+				<role> Drums </role> 
+				</performer>
+			<performer> 
+				<pname>Harry</pname>
+				<role> Guitarist </role> 
+				</performer>
+			<performer> 
+				<pname>Liam</pname>
+				<role> Idiot </role> 
+				</performer>
+		</artists>
+		<ticketprice>
+				<gold> 100  </gold>
+				<silver> 200 </silver>
+			</ticketprice>
+		<seller>
+			<sname>StupidTeenRecords</sname>
+			<slink>ebay.com/trash/oned</slink>
+		</seller>
+	</band>
+</ad>

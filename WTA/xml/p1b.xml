@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="band.css"?>   
+<?xml-stylesheet type="text/xsl" href="b.xsl"?>
+<ad>
+	<band>
+		<name> Beatles </name>
+		<show minOccurs = "1">
+			<date><day>20</day><month>April</month></date>
+			<venue>Mangalore</venue>
+			</show>
+		<genre>Pop</genre>
+		<artists>
+			<performer> 
+					<pname>John</pname>
+					<role> Vocals </role> 
+				</performer>
+			<performer> 
+					<pname>Paul</pname>
+					<role> Guitarist </role> 
+				</performer>
+			<performer> 
+				<pname>Ringo</pname>
+				<role> Drums </role> 
+				</performer>
+			<performer> 
+				<pname>George</pname>
+				<role> Guitarist </role> 
+				</performer>
+		</artists>
+		<ticketprice>90</ticketprice>
+		<seller>
+			<sname> popular records </sname>
+			<slink> popsrecords.com/Beatles </slink>
+		</seller>
+	</band>
+	<band>
+		<name> One Direction  </name>
+		<show minOccurs = "1">
+			<date><day>15</day><month>April</month></date>
+			<venue>Mangalore</venue>
+			</show>
+		<genre>Classical</genre>
+		<artists>
+			<performer> 
+					<pname>Zayn</pname>
+					<role> Vocals </role> 
+				</performer>
+			<performer> 
+					<pname>Louis</pname>
+					<role> Guitarist </role> 
+				</performer>
+			<performer> 
+				<pname>Niall</pname>
+				<role> Drums </role> 
+				</performer>
+			<performer> 
+				<pname>Harry</pname>
+				<role> Guitarist </role> 
+				</performer>
+			<performer> 
+				<pname>Liam</pname>
+				<role> Idiot </role> 
+				</performer>
+		</artists>
+		<ticketprice>80</ticketprice>
+		<discount>10%</discount>
+		<seller>
+			<sname> stupid teen records </sname>
+			<slink> ebay.com/trash/oned </slink>
+		</seller>
+	</band>
+</ad>

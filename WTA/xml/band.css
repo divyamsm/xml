@@ -1,0 +1,49 @@
+name{
+	font-weight: bold;
+	color: blue;
+	display: block;
+}
+
+genre{
+	color:maroon;
+	font-weight: bold;
+	margin-left: 10%;
+}
+
+performer{
+	margin-left: 20%; 
+	font-style: italic;
+	display : block;
+	color : orange;
+}
+
+date{
+	font-weight: bold;
+	color: blue;
+	padding-left: 40%;
+}
+
+venue{
+	font-weight: bold;
+	color: blue;
+}
+
+ticketprice{
+	margin-left: 20%; 
+	display:block;
+	color : orange;
+}
+
+show{
+	display: block;
+}
+
+seller{
+	color: black;
+	font-weight: bold;
+	margin-left: 15%;
+}
+
+slink{
+	padding-left: 7%;
+}

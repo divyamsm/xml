@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 3 | lab 4</title>
+</head>
+<body>
+	<form name="mForm">
+		Enter First Name :
+		<input type="text" name="fName">
+		Enter Last Name :
+		<input type="text" name="lName">
+		Enter email id :
+		<input type="text" name="email">
+		Gender :
+		<input type="radio" name="gender" value="M">M
+		<input type="radio" name="gender" value="F">F
+		Enter Comments :
+		<input type="text" name="address">
+		<button onclick="validateForm(mForm)"> Validate Now </button>
+	</form>
+
+	<script type="text/javascript">
+		function ValidateEmail(mail) 
+		{
+			if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+			{
+				return (true);
+			}
+			return (false);
+		}
+		function validateForm(mForm) {
+			if(mForm.fName.value == "")
+			{
+				alert("Enter First Name!!!");
+				return;
+			}
+			if(mForm.lName.value == "")
+			{
+				alert("Enter Last Name!!!");
+				return;
+			}
+			if(mForm.email.value == "")
+			{
+				alert("Enter email!!!");
+				return;
+			}
+			if(mForm.gender.value == "")
+			{
+				alert("Enter gender!!!");
+				return;
+			}
+			if(mForm.fName.value.length > 20)
+			{
+				alert("First Name too Long!!!");
+			}
+			if(mForm.lName.value.length > 20)
+			{
+				alert("Last Name too Long!!!");
+			}
+			if(!ValidateEmail(mForm.email.value))
+			{
+				alert("Invalid Email!!!");
+			}
+
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<title>Lab 4 | Question 1</title>
+</head>
+<body>
+
+	<h1>Using Name</h1>
+	<form name="mForm">
+		Enter Name :
+		<input type="text" name="fName">
+		Enter City : 
+		<input type="text" name="city">
+		Gender :
+		<input type="radio" name="gender" value="M">M
+		<input type="radio" name="gender" value="F">F
+		Enter Comments :
+		<input type="text" name="address">
+		<button onclick="return getFormDet(mForm.fName.value, mForm.city.value, mForm.address.value, mForm.gender.value)">Submit</button>
+	</form>
+	<p id="t1">!!!</p>
+	<br> <br> <br>
+
+	<h1>Using DOM Address</h1>
+	<form name="mForm1">
+		Enter Name :
+		<input type="text" name="fName">
+		Enter City : 
+		<input type="text" name="city">
+		Gender :
+		<input type="radio" name="gender" value="M">M
+		<input type="radio" name="gender" value="F">F
+		Enter Comments :
+		<input type="text" name="address">
+		<button onclick="return getDOMAddress(mForm1)">Submit</button>
+	</form>
+	<p id="t2">!!!</p>
+	<br> <br> <br>
+
+	<h1>Using getElementById</h1>
+	<form name="mForm2">
+		Enter Name :
+		<input type="text" id="fName">
+		Enter City : 
+		<input type="text" id="city">
+		Gender :
+		<input type="radio" name="gender" value="M">M
+		<input type="radio" name="gender" value="F">F
+		Enter Comments :
+		<input type="text" id="address">
+		<button onclick="return getById(mForm2.gender)">Submit</button>
+	</form>
+	<p id="t3">!!!</p>
+    
+    
+	<script type="text/javascript">
+		function getFormDet(fName, city, address, gender) 
+		{
+			// alert("XYZ");
+			document.getElementById('t1').innerHTML = "Name = " + fName + " city = " + city + " address = " + address + " gender = " + gender;
+			return false;
+		}
+		function getDOMAddress(mForm)
+		{
+			document.getElementById('t2').innerHTML = "Name = " + mForm.fName.value + " city = " + mForm.city.value + " address = " + mForm.address.value + " gender = " + mForm.gender.value;
+			return false;
+		}
+		function getById(gender)
+		{
+			document.getElementById('t3').innerHTML = "Name = " + document.getElementById('fName').value + " city = " + document.getElementById('city').value + " address = " + document.getElementById('address').value + " gender = " + gender.value;
+			return false;
+		}
+	</script>
+</body>
+</html>
